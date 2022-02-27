@@ -7,7 +7,7 @@ BARRA="\033[1;36m---------------------------------------------------------------
 echo -e "$BARRA"
 cat << EOF
 
-           NEW KEY GENERATOR BY 8TH
+           NEW KEY GENERATOR BY Prueba
            INSTALACOES: $(cat $IVAR)
            
 EOF
@@ -278,7 +278,7 @@ echo -e "[2] = APAGAR/OLHAR KEYS"
 echo -e "[3] = LIMPAR KEYS USADAS"
 echo -e "[4] = ALTERAR ARQUIVOS KEY BASICA"
 echo -e "[5] = START/STOP KEYGEN $PID_GEN\033[0m"
-echo -e "[6] = VER LOG"
+echo -e "[6] = VER LOG (registro)"
 echo -e "[7] = MUDAR MENSAGEM"
 echo -e "[0] = SAIR"
 echo -e "$BARRA"
