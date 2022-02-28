@@ -89,7 +89,7 @@ pv="$(echo ${idioma[$selection]}|cut -d' ' -f1)"
 byinst="true"
 }
 install_fim () {
-msg -ama "$(source trans -b pt:${id} "Instalacao Completa, Utilize os Comandos"|sed -e 's/[^a-z -]//ig')" && msg bar2
+msg -ama "$(source trans -b pt:${id} "Instalacao Completa,COMANDO PRINCIPAL"|sed -e 's/[^a-z -]//ig')" && msg bar2
 echo -e " menu / adm" && msg -verm "$(source trans -b pt:${id} "Reinicie seu servidor para concluir a instalacao"|sed -e 's/[^a-z -]//ig')"
 msg -bar2
 }
@@ -167,7 +167,7 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -ama "$(source trans -b pt:${id} "BEM VINDO, OBRIGADO POR UTILIZAR"|sed -e 's/[^a-z -]//ig'): \033[1;31m[NEW-ULTIMATE]"
+   msg -ama "$(source trans -b pt:${id} "BEM VINDO, OBRIGADO"|sed -e 's/[^a-z -]//ig'): \033[1;31m(NEW-prueba)"
    REQUEST=$(ofus "$Key"|cut -d'/' -f2)
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
